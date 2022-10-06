@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="Content-Security-Policy: default-src 'self'" />
+    <title>R6S Random Picker</title>
+    <script src="js/arr.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rainbow Six Siege</h1>
+        <h2>Random Operator Picker</h2>
+    </header>
+
+    <div class="container">
+        <div class="buttons">
+            <button type="button" onclick="pickAttacker();" value="Generate Attackers" id="atk"></button>
+
+            <button type=" button" onclick="pickDefender();" value="Generate Defenders" id="def"></button>
+        </div>
+
+        <div id="container">
+            <div id="card"></div>
+            <div id="icon"></div>
+            <div id="a"></div>
+        </div>
+
+        <footer>
+            <a href="https://github.com/onnivaahtera" target="_blank" class="fa fa-github"
+                style="font-size: 64px; margin: 20px; color:#fff;"></a>
+        </footer>
+</body>
+
+</html>

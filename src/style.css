@@ -1,0 +1,114 @@
+/* Overall styling of the page */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    background: center no-repeat url("https://wallpaper.dog/large/959379.jpg");
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+header {
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+#container {
+    display: inline-block;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+
+
+#card {
+    border: 2px solid black;
+    background-image: url('https://static.wikia.nocookie.net/rainbowsix/images/6/63/Grey_Card_Background.jpeg/');
+    background-size: cover;
+}
+
+#icon {
+    position: relative;
+    align-items: center;
+    top: -175px;
+    z-index: 1;
+}
+
+#a {
+    text-align: center;
+    position: relative;
+    margin-left: 2px;
+    margin-right: 2px;
+    top: -150px;
+    color: #fff;
+    z-index: 1;
+}
+
+
+.buttons button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-size: 100%;
+    color: white;
+    width: 150px;
+    height: 150px;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px #000000;
+    border-radius: 1.5em;
+    margin: 1em;
+    border: #000000 1px solid;
+    background-color: none;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    scale: 104%;
+}
+
+.fa-github:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    scale: 104%;
+}
+
+#container {
+    transition: 0.3s;
+}
+
+#def {
+    background: #ff932e url("https://media.discordapp.net/attachments/692891121185062944/1021876150596808865/bootlegdefender.png");
+    background-size: cover;
+}
+
+#atk {
+    background: #1387e1 url("https://media.discordapp.net/attachments/692891121185062944/1021876150961721395/bootlegattack.png");
+    background-size: cover;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
