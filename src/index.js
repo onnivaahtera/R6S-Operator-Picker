@@ -11,8 +11,8 @@ const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     title: 'r6randompicker',
-    width: 1280,
-    height: 1024,
+    width: 1920,
+    height: 1080,
     icon: __dirname + '/icon.png',
     autoHideMenuBar: true,
     webPreferences: {
@@ -22,6 +22,12 @@ const createWindow = () => {
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
+
+
+  mainWindow.webContents.on('new-window', function (e, url) {
+    e.preventDefault();
+    require('electron').shell.openExternal(url);
+  })
 
 };
 
