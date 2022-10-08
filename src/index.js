@@ -14,14 +14,14 @@ const createWindow = () => {
     title: 'r6randompicker',
     width: 1280,
     height: 1024,
-    icon: __dirname + '/icon.png',
+    icon: __dirname + '/img/icon.png',
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
   });
 
-  mainWindow.webContents.openDevTools();
+  /* mainWindow.webContents.openDevTools(); */
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));

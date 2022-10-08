@@ -13,30 +13,35 @@
 </head>
 
 <body>
+
     <header>
         <h1>Rainbow Six Siege</h1>
         <h2>Random Operator Picker</h2>
     </header>
 
-    <div class="container">
+    <main>
         <div class="buttons">
             <button type="button" onclick="pickAttacker();" value="Generate Attackers" id="atk"></button>
 
             <button type=" button" onclick="pickDefender();" value="Generate Defenders" id="def"></button>
         </div>
 
-        <div id="container">
-
-            <div id="card"></div>
-            <div id="text"></div>
-            <div id="icon"></div>
-
+        <div class="container">
+            <div class="card">
+                <img id="card">
+                <img id="icon">
+                <p id="name"></p>
+            </div>
         </div>
+    </main>
 
-        <footer>
-            <a href="https://github.com/onnivaahtera/R6S-Operator-Picker" target="_blank" class="fa fa-github"
-                style="font-size: 64px; margin: 20px; color:#fff;"></a>
-        </footer>
+
+
+
+    <footer>
+        <a href="https://github.com/onnivaahtera/R6S-Operator-Picker" target="_blank" class="fa fa-github"
+            style="font-size: 64px; margin: 20px; color:#fff;"></a>
+    </footer>
 </body>
 
 </html>

@@ -73,13 +73,13 @@ header {
 
 
 .container {
-
     margin: auto;
-    max-width: 100%;
+    width: 300px;
 }
 
 .card {
-
+    position: relative;
+    right: 50px;
     width: 100%;
     height: 300px;
 }
@@ -95,18 +95,20 @@ header {
 
 #icon {
     position: relative;
-    right: 150;
-    bottom: 30px;
+    left: 50px;
+    bottom: 150px;
     width: 100px;
     z-index: 11;
 }
 
 #name {
-    color: #fff;
     position: relative;
-    bottom: 31px;
-    left: 517px;
-    width: 300px;
+    left: 52px;
+    bottom: 126px;
+    color: #fff;
+
+
+
 }
 
 
