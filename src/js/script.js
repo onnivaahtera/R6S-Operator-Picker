@@ -9,7 +9,6 @@ function pickAttacker() {
     const random = Math.floor(Math.random() * arr.length)
     console.log(arr[random]);
 
-
     const name = attackers[random].name
 
 
