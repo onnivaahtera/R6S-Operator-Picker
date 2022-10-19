@@ -1,5 +1,6 @@
 
 function pickAttacker() {
+
     const arr = []
 
     for (const attacker in attackers) {
@@ -27,9 +28,11 @@ function pickAttacker() {
 function pickDefender() {
 
     const arr = []
+
     for (const defender in defenders) {
         arr.push(defenders[defender].name);
     }
+
     const random = Math.floor(Math.random() * arr.length)
     console.log(arr[random]);
 

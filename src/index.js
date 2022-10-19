@@ -1,6 +1,5 @@
 const { app, BrowserWindow, shell } = require('electron');
 const path = require('path');
-const { isBooleanObject } = require('util/types');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 // eslint-disable-next-line global-require
@@ -21,7 +20,8 @@ const createWindow = () => {
     },
   });
 
-  /* mainWindow.webContents.openDevTools(); */
+  // Automatically open DevTools
+  // mainWindow.webContents.openDevTools();
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
@@ -35,11 +35,10 @@ const createWindow = () => {
 
 };
 
-
-
 app.on('ready', createWindow);
 
 
+// closes properly on MacOs
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
@@ -47,7 +46,6 @@ app.on('window-all-closed', () => {
 });
 
 app.on('activate', () => {
-
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow();
   }
