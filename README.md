@@ -1,2 +1,2 @@
-# R6opPicker
+# R6S operator picker
 Random operator picker
